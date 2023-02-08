@@ -31,7 +31,8 @@ html {
   color: var(--main-color);
 }
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Special Elite", cursive;
   display: grid;
   grid-template-columns: minmax(10px, 1064px);
   justify-content: center;
@@ -63,9 +64,12 @@ p {
 
 h1 {
   font-size: 1.2rem;
+  font-family: "Oswald", sans-serif;
 }
 h2 {
   font-size: 1rem;
+
+  font-family: "Bebas Neue", cursive;
   color: var(--main-header2-color);
 }
 
@@ -88,23 +92,25 @@ section {
 .overskrift {
   display: grid;
   font-size: 2rem;
+  /* pointer-events: none; */
 }
 
 .overskrift .tekst {
+  /* pointer-events: none; */
   padding: 1rem;
   width: 100%;
   color: var(--main-header-color);
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
   place-self: end center;
-  /* margin-bottom: 20px; */
+  margin-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.464);
 }
 .overskrift h2 {
   color: var(--main-header-color);
 }
 
-.overskrift img {
+/* .overskrift img {
   width: 100%;
   grid-column: 1;
   grid-row: 1;
@@ -112,6 +118,18 @@ section {
   z-index: -2;
   object-fit: cover;
   aspect-ratio: 16/9;
+} */
+
+.overskrift video {
+  z-index: 100;
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1;
+  border: solid var(--main-border-size) var(--main-border-color);
+  z-index: -2;
+  /* object-fit: cover; */
+  /* aspect-ratio: 16/9; */
+  height: auto;
 }
 
 .logo,
@@ -158,10 +176,12 @@ section {
   /* grid-row: 3;
   place-self: end center; */
   list-style-type: none;
+  font-family: "Bebas Neue", cursive;
 }
 
 .medlemmer span {
   font-size: 1rem;
+
   color: var(--main-header2-color);
 }
 
@@ -201,6 +221,7 @@ footer {
   /* display: grid; */
   margin: 20px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
   /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 }
 
